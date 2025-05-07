@@ -61,7 +61,7 @@ stage('Cleanup') {
         stage('Deploy') {
             steps {
                 script {
-                    sh "docker exec -u root ansible ansible-playbook /root/deploy.yml"
+                    sh "docker exec -u root ansible ansible-playbook /root/deploy1.yml"
                 }
             }
         }
